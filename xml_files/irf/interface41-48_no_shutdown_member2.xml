@@ -1,0 +1,36 @@
+<Ifmgr>
+    <Interfaces>
+        <Interface>
+            <IfIndex>202</IfIndex>
+            <AdminStatus>1</AdminStatus>
+        </Interface>
+        <Interface>
+            <IfIndex>203</IfIndex>
+            <AdminStatus>1</AdminStatus>
+        </Interface>
+        <Interface>
+            <IfIndex>204</IfIndex>
+            <AdminStatus>1</AdminStatus>
+        </Interface>
+        <Interface>
+            <IfIndex>205</IfIndex>
+            <AdminStatus>1</AdminStatus>
+        </Interface>
+        <Interface>
+            <IfIndex>206</IfIndex>
+            <AdminStatus>1</AdminStatus>
+        </Interface>
+        <Interface>
+            <IfIndex>207</IfIndex>
+            <AdminStatus>1</AdminStatus>
+        </Interface>
+        <Interface>
+            <IfIndex>208</IfIndex>
+            <AdminStatus>1</AdminStatus>
+        </Interface>
+        <Interface>
+            <IfIndex>209</IfIndex>
+            <AdminStatus>1</AdminStatus>
+        </Interface>
+    </Interfaces>
+</Ifmgr>
