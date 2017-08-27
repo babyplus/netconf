@@ -199,6 +199,10 @@
             <GroupId>110</GroupId>
         </LAGGMember>
         <LAGGMember>
+            <IfIndex>12</IfIndex>
+            <GroupId>111</GroupId>
+        </LAGGMember>
+        <LAGGMember>
             <IfIndex>14</IfIndex>
             <GroupId>11</GroupId>
         </LAGGMember>
@@ -349,6 +353,10 @@
         <LAGGMember>
             <IfIndex>172</IfIndex>
             <GroupId>110</GroupId>
+        </LAGGMember>
+        <LAGGMember>
+            <IfIndex>173</IfIndex>
+            <GroupId>111</GroupId>
         </LAGGMember>
         <LAGGMember>
             <IfIndex>175</IfIndex>

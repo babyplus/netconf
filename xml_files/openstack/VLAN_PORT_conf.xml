@@ -97,10 +97,6 @@
             <PVID>150</PVID>
         </Interface>
         <Interface>
-            <IfIndex>1629</IfIndex>
-            <PVID>150</PVID>
-        </Interface>
-        <Interface>
             <IfIndex>1630</IfIndex>
             <PVID>150</PVID>
         </Interface>
@@ -142,6 +138,10 @@
         </Interface>
         <Interface>
             <IfIndex>1640</IfIndex>
+            <PVID>150</PVID>
+        </Interface>
+        <Interface>
+            <IfIndex>1641</IfIndex>
             <PVID>150</PVID>
         </Interface>
     </AccessInterfaces>
@@ -200,7 +200,7 @@
         </Interface>
         <Interface>
             <IfIndex>14</IfIndex>
-            <PermitVlanList>1,100-102</PermitVlanList>
+            <PermitVlanList>1,100-102,150-154</PermitVlanList>
         </Interface>
         <Interface>
             <IfIndex>29</IfIndex>
@@ -307,8 +307,12 @@
             <PermitVlanList>1,150-154</PermitVlanList>
         </Interface>
         <Interface>
+            <IfIndex>174</IfIndex>
+            <PermitVlanList>1</PermitVlanList>
+        </Interface>
+        <Interface>
             <IfIndex>175</IfIndex>
-            <PermitVlanList>1,100-102</PermitVlanList>
+            <PermitVlanList>1,100-102,150-154</PermitVlanList>
         </Interface>
         <Interface>
             <IfIndex>190</IfIndex>
@@ -367,10 +371,6 @@
             <PermitVlanList>1,100-102,150-154,1000-2000</PermitVlanList>
         </Interface>
         <Interface>
-            <IfIndex>1616</IfIndex>
-            <PermitVlanList>1,100-102</PermitVlanList>
-        </Interface>
-        <Interface>
             <IfIndex>1617</IfIndex>
             <PermitVlanList>1,150-154</PermitVlanList>
         </Interface>
@@ -419,8 +419,8 @@
             <PermitVlanList>1,150-154</PermitVlanList>
         </Interface>
         <Interface>
-            <IfIndex>1641</IfIndex>
-            <PermitVlanList>1,1000-2000</PermitVlanList>
+            <IfIndex>1629</IfIndex>
+            <PermitVlanList>1</PermitVlanList>
         </Interface>
         <Interface>
             <IfIndex>1642</IfIndex>
@@ -464,7 +464,11 @@
         </Interface>
         <Interface>
             <IfIndex>1652</IfIndex>
-            <PermitVlanList>1,1000-2000</PermitVlanList>
+            <PermitVlanList>1</PermitVlanList>
+        </Interface>
+        <Interface>
+            <IfIndex>1653</IfIndex>
+            <PermitVlanList>1</PermitVlanList>
         </Interface>
     </TrunkInterfaces>
 </VLAN>

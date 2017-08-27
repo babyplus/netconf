@@ -155,7 +155,7 @@ dict = {
         'h3c_xml': '''
         <rpc message-id="100"
         xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
-        <save OverWrite="{OverWrite}">
+        <save OverWrite="{FileOverWrite}">
         <file>{FileName}</file>
         </save>
         </rpc>

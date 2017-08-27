@@ -68,67 +68,67 @@
         <Interface>
             <IfIndex>1629</IfIndex>
             
-            <PVID>150</PVID>
+            <LinkType>2</LinkType>
         </Interface>
         <Interface>
             <IfIndex>1630</IfIndex>
-            
-            <PVID>150</PVID>
+            <LinkType>1</LinkType>
+            <PVID>151</PVID>
         </Interface>
         <Interface>
             <IfIndex>1631</IfIndex>
-            
-            <PVID>150</PVID>
+            <LinkType>1</LinkType>
+            <PVID>151</PVID>
         </Interface>
         <Interface>
             <IfIndex>1632</IfIndex>
-            
-            <PVID>150</PVID>
+            <LinkType>1</LinkType>
+            <PVID>151</PVID>
         </Interface>
         <Interface>
             <IfIndex>1633</IfIndex>
-            
-            <PVID>150</PVID>
+            <LinkType>1</LinkType>
+            <PVID>151</PVID>
         </Interface>
         <Interface>
             <IfIndex>1634</IfIndex>
-            
-            <PVID>150</PVID>
+            <LinkType>1</LinkType>
+            <PVID>151</PVID>
         </Interface>
         <Interface>
             <IfIndex>1635</IfIndex>
-            
-            <PVID>150</PVID>
+            <LinkType>1</LinkType>
+            <PVID>151</PVID>
         </Interface>
         <Interface>
             <IfIndex>1636</IfIndex>
-            
-            <PVID>150</PVID>
+            <LinkType>1</LinkType>
+            <PVID>151</PVID>
         </Interface>
         <Interface>
             <IfIndex>1637</IfIndex>
-            
-            <PVID>150</PVID>
+            <LinkType>1</LinkType>
+            <PVID>151</PVID>
         </Interface>
         <Interface>
             <IfIndex>1638</IfIndex>
-            
-            <PVID>150</PVID>
+            <LinkType>1</LinkType>
+            <PVID>151</PVID>
         </Interface>
         <Interface>
             <IfIndex>1639</IfIndex>
-            
-            <PVID>150</PVID>
+            <LinkType>1</LinkType>
+            <PVID>151</PVID>
         </Interface>
         <Interface>
             <IfIndex>1640</IfIndex>
-            
-            <PVID>150</PVID>
+            <LinkType>1</LinkType>
+            <PVID>151</PVID>
         </Interface>
         <Interface>
             <IfIndex>1641</IfIndex>
-            
-            <PVID>150</PVID>
+            <LinkType>1</LinkType>
+            <PVID>151</PVID>
         </Interface>
         <Interface>
             <IfIndex>1642</IfIndex>
@@ -182,7 +182,12 @@
         </Interface>
         <Interface>
             <IfIndex>1652</IfIndex>
-            
+
+            <LinkType>2</LinkType>
+        </Interface>
+        <Interface>
+            <IfIndex>1653</IfIndex>
+
             <LinkType>2</LinkType>
         </Interface>
 

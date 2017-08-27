@@ -3,9 +3,9 @@ from lib.NetConfObject import NetConfRun
 
 class Mission(object):
     def __init__(self, path, hosts_conf, **kwargs):
-        self.path = path
-        self.hosts_conf = hosts_conf
-        self.mission_kwargs = kwargs
+        self.path = copy.deepcopy(path)
+        self.hosts_conf = copy.deepcopy(hosts_conf)
+        self.mission_kwargs = copy.deepcopy(kwargs)
 
     def uniq_key(self, new_dict, old_dict):
         for n in new_dict.keys():
@@ -45,7 +45,7 @@ class XmlMission(Mission):
             print('{ip} >>> begin'.format(**kwargs))
             print("missions : {}".format(init['xml_file']))
             for m in range(len(init_tmp)):
-                init['xml_file'] = init_tmp[m]
-                print("init>>")
+                init['xml_file'] = init_tmp[str(m)]
+                print("-->->")
                 NetConfRun(**init).run_xml_conf("{path}/{xml_file}".format(**init))
             print('{ip} >>> end'.format(**kwargs))
