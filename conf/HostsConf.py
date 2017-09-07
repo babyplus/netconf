@@ -14,7 +14,7 @@ init = {
             "0": 'xml_files/openstack/VLAN_conf.xml',
             "1": 'xml_files/openstack/interfaces_conf.xml',
             "2": 'xml_files/openstack/LAGG_conf.xml',
-            "3": 'xml_files/openstack/IRF_interfaces_conf.xml',
+            "3": 'xml_files/openstack/LAGG_interfaces_conf.xml',
             "4": 'xml_files/openstack/VLAN_PORT_conf.xml',
         },
 
@@ -26,7 +26,7 @@ irf_init = {
         'oem':'h3c',
         'ip':'10.218.2.232',
         'user':'admin',
-        'password':'gsta123',
+        'password':'123456',
         'xml_file':{
             "0": 'xml_files/irf/interface41-48_shutdown.xml',
             "1": 'xml_files/irf/IRF_member1.xml',
@@ -39,7 +39,7 @@ irf_init = {
         'oem': 'h3c',
         'ip': '10.218.2.233',
         'user': 'admin',
-        'password': 'gsta123',
+        'password': '123456',
         'xml_file': {
             "0": 'xml_files/irf/interface41-48_shutdown_member2.xml',
             "1": 'xml_files/irf/IRF_member2.xml',

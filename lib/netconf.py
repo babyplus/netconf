@@ -6,7 +6,7 @@ from string import Template
 from xml.etree import ElementTree as ET
 import ssl
 from lib.DataCollect import DebugCollect
-
+#from lib import ssl
 
 MESSAGE_ID = "100"
 LANGUAGE_CH = "zh-cn"
@@ -113,6 +113,7 @@ class NETCONF(object):
         if req is not None:
             try:
                 ssl._create_default_https_context = ssl._create_unverified_context
+                #context = ssl._create_unverified_context()
                 resp = urllib2.urlopen(req, timeout=240)
                 if resp is not None:
                     buf = resp.read()

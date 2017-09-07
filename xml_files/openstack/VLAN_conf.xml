@@ -3030,8 +3030,5 @@
         <VLANID>
             <ID>2000</ID>
         </VLANID>
-        <VLANID>
-            <ID>2001</ID>
-        </VLANID>
     </VLANs>
 </VLAN>

@@ -57,17 +57,41 @@ dict = {
         '''
     },
 
-    'get_all': {
-        'h3c_xml': ''''
+    'get_more': {
+        'h3c_xml': '''
         <rpc message-id ="100" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:xc="http://www.{oem}.com/netconf/base:1.0">
         <get>
         <filter type="subtree">
         <top xmlns="http://www.{oem}.com/netconf/data:1.0">
+
+
         </top>
         </filter>
         </get>
         </rpc>
         '''
+    },
+
+    'make_irf_interfaces_conf': {
+        'h3c_xml': '''
+    <rpc message-id ="100" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:xc="http://www.{oem}.com/netconf/base:1.0">
+    <get>
+    <filter type="subtree">
+    <top xmlns="http://www.{oem}.com/netconf/data:1.0">
+    <Ifmgr>
+    <Interfaces>
+    <Interface>
+    <IfIndex></IfIndex>
+                                <Name></Name>
+    </Interface>
+    </Interfaces>
+    </Ifmgr>
+
+    </top>
+    </filter>
+    </get>
+    </rpc>
+    '''
     },
 
     'get_module': {

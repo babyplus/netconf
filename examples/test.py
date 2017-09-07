@@ -3,6 +3,7 @@ import sys
 import platform
 import re
 import time
+from xml.etree import ElementTree as ET
 sys.path.append('/var/jenkins_home/project/ansible/huang_h3c_netconf/huang_h3c_netconf')
 from lib.NetconfMission import XmlMission
 from lib.NetconfMission import CommandMission
@@ -15,26 +16,7 @@ xml_file = HostsConf.xml_file
 
 def wait_host():
     print("rebooting switch ...")
-    if platform.system() == 'Windows':
-        test_ping = 'ping {}'
-    elif platform.system() == 'Linux':
-        test_ping = 'ping {} -c4'
-    else:
-        print('not support')
-        exit(1)
-    for machine in HostsConf.init:
-        time.sleep(180)
-        for n in range(21):
-            time.sleep(60)
-            try:
-                ret = os.system(test_ping.format(HostsConf.init[machine]['ip']))
-            except Exception:
-                pass
-            if ret == 0:
-                break
-            if n == 20:
-                print('timeout...')
-                exit(1)
+    time.sleep(720)
 
 def check_irf_config():
     print("rebooting switch ...")
@@ -87,5 +69,17 @@ def process():
     #########
 
 if __name__ == '__main__':
-    XmlMission(path, HostsConf.init).run()
-    CommandMission(path, HostsConf.init).run("get_all_config", super_module='VLAN', sub_module='TrunkInterfaces')
+    #XmlMission(path, HostsConf.init).run()
+    hosts_conf = '''
+
+    {"0": {
+            "ip": "10.218.2.232", "password": "gsta123",
+           "xml_file": {
+                        "0": "xml_files/openstack/LAGG_interfaces_conf.xml"
+                        }, "user": "admin", "oem": "h3c"
+            }
+    }
+
+    '''
+    import json
+    ret = json.loads(hosts_conf)

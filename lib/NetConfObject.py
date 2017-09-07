@@ -22,6 +22,9 @@ class NetConfRun(object):
                     **self.init
                 )
                 DebugCollect('result.xml', resp, **kwargs)
+            except TypeError:
+                if mission == "user_CLI":
+                    pass
             except Exception as e:
                 print kwargs
                 LOG.error("need to set {} value as argument or maybe use a illegal keyword in NetconfXmlDict".format(e))
